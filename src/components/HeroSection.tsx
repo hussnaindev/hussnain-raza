@@ -46,7 +46,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-5 left-5 p-8 z-10 text-left backdrop-blur-lg bg-white/20 rounded-lg shadow-lg">
+      <div className="absolute bottom-5 left-5 mr-5 p-8 z-10 text-left backdrop-blur-lg bg-white/20 rounded-lg shadow-lg">
         <IntroCard />
       </div>
     </section>
