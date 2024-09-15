@@ -35,7 +35,7 @@ const poppins = Poppins({
 
 // Project Card for non-featured projects
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
-  <Card onClick={() => project.live &&  (window.location.href = project.live)} className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+  <Card onClick={() => project.live &&  (window.location.href = project.live)} className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer ml-5 mr-5">
     <CardHeader>
       <Image
         src={project.image}
@@ -74,7 +74,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
 
 // Featured Project Card for the third project
 const FeaturedProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
-  <Card className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer flex flex-row items-center justify-center align-middle flex-wrap" onClick={() => project.live &&  (window.location.href = project.live)}>
+  <Card className="bg-white ml-5 mr-5 dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer flex flex-row items-center justify-center align-middle flex-wrap" onClick={() => project.live &&  (window.location.href = project.live)}>
     <div className="p-6 flex flex-col text-left w-full md:w-2/3">
       <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
       <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
